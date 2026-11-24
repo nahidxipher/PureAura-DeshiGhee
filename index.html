@@ -1,0 +1,1711 @@
+<!DOCTYPE html>
+<html lang="bn" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PureAura | খাঁটি দেশি গরুর ঘি — প্রকৃতির খাঁটি স্বাদ, প্রতিটি চামচে</title>
+  <meta name="description" content="PureAura দেশি গরুর ঘি — ঐতিহ্যবাহী পদ্ধতিতে ধীর আঁচে তৈরি দানাদার ও সুগন্ধি দেশি ঘি। গরম ভাত, খিচুড়ি, পরোটা ও পোলাওয়ের সাথে অতুলনীয় স্বাদ।" />
+  <meta name="keywords" content="PureAura, দেশি ঘি, দেশি গরুর ঘি, Deshi Ghee Bangladesh, গাওয়া ঘি, দানাদার ঘি, PureAura Ghee" />
+  <meta name="author" content="PureAura" />
+
+  <!-- Open Graph / Social Media SEO Tags -->
+  <meta property="og:title" content="PureAura | খাঁটি দেশি গরুর ঘি" />
+  <meta property="og:description" content="প্রকৃতির খাঁটি স্বাদ, প্রতিটি চামচে। ঐতিহ্যবাহী স্বাদের ছোঁয়ায় প্রতিদিনের খাবার হোক আরও আনন্দময়।" />
+  <meta property="og:type" content="website" />
+
+  <!-- Google Fonts: Hind Siliguri & Noto Serif Bengali for Bengali, Playfair Display & Plus Jakarta Sans for Brand/Numbers -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;500;600;700&family=Noto+Serif+Bengali:wght@600;700&family=Playfair+Display:ital,wght@0,600;0,700;1,600&family=Plus+Jakarta+Sans:wght@500;600;700&display=swap" rel="stylesheet" />
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            gold: {
+              50: '#FFFDF7',
+              100: '#FDF6E3',
+              200: '#F9E7BA',
+              300: '#F5D07A',
+              400: '#F5B841',
+              500: '#D99B26',
+              600: '#B87D14',
+              700: '#925E0E',
+            },
+            cream: {
+              50: '#FFFDF9',
+              100: '#FAF5EB',
+              200: '#F3EAD8',
+              300: '#E6D7BC',
+            },
+            espresso: {
+              700: '#5C3A21',
+              800: '#4A2E1B',
+              900: '#2C1A0E',
+              950: '#1C1008',
+            }
+          },
+          fontFamily: {
+            sans: ['"Hind Siliguri"', '"Plus Jakarta Sans"', 'sans-serif'],
+            serif: ['"Noto Serif Bengali"', '"Playfair Display"', 'serif'],
+            brand: ['"Playfair Display"', 'serif'],
+            num: ['"Plus Jakarta Sans"', '"Hind Siliguri"', 'sans-serif'],
+          },
+          boxShadow: {
+            'warm': '0 12px 35px -8px rgba(44, 26, 14, 0.08)',
+            'warm-lg': '0 22px 50px -12px rgba(44, 26, 14, 0.14)',
+            'gold': '0 10px 28px -6px rgba(217, 155, 38, 0.38)',
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    /* Custom Base & Editorial Enhancements */
+    body {
+      background-color: #FAF5EB;
+      color: #2C1A0E;
+      font-family: 'Hind Siliguri', sans-serif;
+      overflow-x: hidden;
+    }
+
+    /* Subtle traditional woven grain overlay */
+    .bg-grain {
+      background-image: radial-gradient(rgba(217, 155, 38, 0.12) 1px, transparent 0);
+      background-size: 24px 24px;
+    }
+
+    /* Glassmorphism warm navbar */
+    .nav-glass {
+      background: rgba(250, 245, 235, 0.88);
+      backdrop-filter: blur(14px);
+      -webkit-backdrop-filter: blur(14px);
+      border-bottom: 1px solid rgba(217, 155, 38, 0.22);
+    }
+
+    /* Golden shimmer button effect */
+    .btn-gold {
+      background: linear-gradient(135deg, #F5B841 0%, #D99B26 55%, #C48617 100%);
+      transition: all 0.3s cubic-bezier(0.22, 1, 0.36, 1);
+    }
+    .btn-gold:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 14px 30px -6px rgba(217, 155, 38, 0.5);
+    }
+    .btn-gold:active {
+      transform: translateY(0);
+    }
+
+    /* Gentle floating animation for hero badges */
+    @keyframes floatSlow {
+      0%, 100% { transform: translateY(0px); }
+      50% { transform: translateY(-7px); }
+    }
+    .animate-float {
+      animation: floatSlow 4.5s ease-in-out infinite;
+    }
+    .animate-float-delayed {
+      animation: floatSlow 5.2s ease-in-out 1.4s infinite;
+    }
+
+    /* FAQ Accordion smooth transition */
+    .faq-content {
+      display: grid;
+      grid-template-rows: 0fr;
+      transition: grid-template-rows 0.32s ease;
+    }
+    .faq-item.active .faq-content {
+      grid-template-rows: 1fr;
+    }
+    .faq-inner {
+      overflow: hidden;
+    }
+    .faq-item.active .faq-icon {
+      transform: rotate(180deg);
+    }
+
+    /* Scroll reveal utility */
+    .reveal {
+      opacity: 0;
+      transform: translateY(22px);
+      transition: opacity 0.65s ease, transform 0.65s ease;
+    }
+    .reveal.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    /* Custom radio card highlight */
+    .pkg-radio:checked + .pkg-label {
+      border-color: #D99B26;
+      background-color: #FFFDF7;
+      box-shadow: 0 8px 24px -6px rgba(217, 155, 38, 0.25);
+    }
+    .pkg-radio:checked + .pkg-label .radio-dot {
+      border-color: #D99B26;
+      background-color: #D99B26;
+      box-shadow: inset 0 0 0 3px #FFFFFF;
+    }
+  </style>
+</head>
+<body class="antialiased selection:bg-gold-300 selection:text-espresso-900 pb-20 md:pb-0">
+
+  <!-- =====================================================================
+       1. STICKY NAVIGATION BAR
+  ====================================================================== -->
+  <header class="sticky top-0 z-50 nav-glass transition-all duration-300">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-20">
+        <!-- Brand Logo -->
+        <a href="#" class="flex items-center gap-3 group focus:outline-none">
+          <div class="w-11 h-11 rounded-2xl bg-gradient-to-br from-gold-400 to-gold-600 flex items-center justify-center shadow-gold group-hover:scale-105 transition-transform">
+            <!-- Custom SVG Golden Ghee Drop & Leaf Emblem -->
+            <svg class="w-6 h-6 text-espresso-950" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M16 3C16 3 7 13.2 7 19.5C7 24.47 11.03 28.5 16 28.5C20.97 28.5 25 24.47 25 19.5C25 13.2 16 3 16 3Z" fill="currentColor" fill-opacity="0.92"/>
+              <path d="M13.5 22.5C11.8 21.5 11 19.5 11.5 17.5" stroke="#FFFDF9" stroke-width="2" stroke-linecap="round"/>
+              <circle cx="19.5" cy="21.5" r="1.5" fill="#FFFDF9"/>
+            </svg>
+          </div>
+          <div>
+            <span class="font-brand text-2xl font-bold tracking-tight text-espresso-900 block leading-none">PureAura</span>
+            <span class="text-xs font-medium text-espresso-700 tracking-wide">দেশি গরুর ঘি</span>
+          </div>
+        </a>
+
+        <!-- Desktop Navigation Links -->
+        <nav class="hidden lg:flex items-center gap-7 text-[15px] font-medium text-espresso-800">
+          <a href="#about" class="hover:text-gold-600 transition-colors">আমাদের ঘি</a>
+          <a href="#why-us" class="hover:text-gold-600 transition-colors">বৈশিষ্ট্য</a>
+          <a href="#quality" class="hover:text-gold-600 transition-colors">মান যাচাই</a>
+          <a href="#pricing" class="hover:text-gold-600 transition-colors">প্যাকেজ</a>
+          <a href="#how-to-use" class="hover:text-gold-600 transition-colors">ব্যবহারবিধি</a>
+          <a href="#faq" class="hover:text-gold-600 transition-colors">প্রশ্নোত্তর</a>
+        </nav>
+
+        <!-- Desktop CTA & Mobile Menu Button -->
+        <div class="flex items-center gap-3">
+          <a href="#order-section" class="btn-gold text-espresso-950 font-semibold px-5 py-2.5 rounded-full text-sm sm:text-base shadow-gold inline-flex items-center gap-2">
+            <span>অর্ডার করুন</span>
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
+            </svg>
+          </a>
+
+          <!-- Mobile Drawer Toggle -->
+          <button id="mobile-menu-btn" type="button" aria-label="মেনু খুলুন" class="lg:hidden p-2.5 rounded-xl bg-cream-200/80 text-espresso-900 hover:bg-gold-200 transition-colors">
+            <svg id="menu-icon-open" class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"/>
+            </svg>
+            <svg id="menu-icon-close" class="w-6 h-6 hidden" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"/>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Mobile Navigation Drawer -->
+    <div id="mobile-menu" class="hidden lg:hidden bg-cream-50 border-t border-gold-200 px-4 pt-3 pb-6 shadow-warm-lg">
+      <nav class="flex flex-col space-y-2 text-base font-medium text-espresso-900">
+        <a href="#about" class="mobile-nav-link px-4 py-2.5 rounded-xl hover:bg-cream-200 transition-colors">আমাদের ঘি সম্পর্কে</a>
+        <a href="#why-us" class="mobile-nav-link px-4 py-2.5 rounded-xl hover:bg-cream-200 transition-colors">কেন PureAura বেছে নেবেন</a>
+        <a href="#quality" class="mobile-nav-link px-4 py-2.5 rounded-xl hover:bg-cream-200 transition-colors">মান যাচাই ও স্বচ্ছতা</a>
+        <a href="#pricing" class="mobile-nav-link px-4 py-2.5 rounded-xl hover:bg-cream-200 transition-colors">প্যাকেজ ও মূল্য তালিকা</a>
+        <a href="#how-to-use" class="mobile-nav-link px-4 py-2.5 rounded-xl hover:bg-cream-200 transition-colors">কীভাবে ব্যবহার করবেন</a>
+        <a href="#faq" class="mobile-nav-link px-4 py-2.5 rounded-xl hover:bg-cream-200 transition-colors">সচরাচর জিজ্ঞাসিত প্রশ্ন</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- =====================================================================
+       2. HERO SECTION
+  ====================================================================== -->
+  <section class="relative overflow-hidden bg-grain pt-8 pb-16 sm:pt-14 sm:pb-24 lg:pt-16 lg:pb-28">
+    <!-- Decorative Soft Warm Glows -->
+    <div class="pointer-events-none absolute -top-24 -right-24 w-96 h-96 rounded-full bg-gold-400/20 blur-3xl"></div>
+    <div class="pointer-events-none absolute bottom-0 -left-24 w-80 h-80 rounded-full bg-gold-500/15 blur-3xl"></div>
+
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-12 items-center">
+        
+        <!-- Left Content Column -->
+        <div class="lg:col-span-6 text-center lg:text-left space-y-6">
+          <!-- Tagline Badge -->
+          <div class="inline-flex items-center gap-2.5 px-4 py-2 rounded-full bg-white/90 border border-gold-300 shadow-sm">
+            <span class="w-2.5 h-2.5 rounded-full bg-gold-500 animate-pulse"></span>
+            <span class="text-sm sm:text-[15px] font-semibold text-espresso-800">প্রকৃতির খাঁটি স্বাদ, প্রতিটি চামচে</span>
+          </div>
+
+          <!-- Main Headline -->
+          <h1 class="font-serif text-3xl sm:text-5xl lg:text-[54px] font-bold text-espresso-900 leading-[1.22] tracking-tight">
+            খাঁটি দেশি ঘি, <span class="text-gold-600 underline decoration-gold-300 decoration-4 underline-offset-8">স্বাদে ও ঘ্রাণে</span> অতুলনীয়
+          </h1>
+
+          <!-- Subtitle -->
+          <p class="text-lg sm:text-xl text-espresso-700 max-w-xl mx-auto lg:mx-0 leading-relaxed">
+            ঐতিহ্যবাহী স্বাদের ছোঁয়ায় প্রতিদিনের খাবার হোক আরও আনন্দময়। দেশি গরুর দুধ থেকে ধীর আঁচে যত্নে তৈরি দানাদার ও সুগন্ধি দেশি ঘি।
+          </p>
+
+          <!-- Primary & Secondary CTAs -->
+          <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 pt-2">
+            <a href="#order-section" class="w-full sm:w-auto btn-gold text-espresso-950 font-bold text-lg px-8 py-4 rounded-2xl shadow-gold inline-flex items-center justify-center gap-2.5">
+              <span>এখনই অর্ডার করুন</span>
+              <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M13 7l5 5m0 0l-5 5m5-5H6"/>
+              </svg>
+            </a>
+            <a href="#about" class="w-full sm:w-auto bg-white hover:bg-cream-200 text-espresso-900 font-semibold text-lg px-7 py-4 rounded-2xl border border-gold-300/80 shadow-warm transition-all inline-flex items-center justify-center gap-2">
+              <span>আমাদের সম্পর্কে জানুন</span>
+            </a>
+          </div>
+
+          <!-- Trust Highlights Strip -->
+          <div class="grid grid-cols-3 gap-3 sm:gap-6 pt-5 border-t border-gold-200/80 max-w-lg mx-auto lg:mx-0">
+            <div>
+              <p class="font-bold text-espresso-900 text-base sm:text-lg">দানাদার টেক্সচার</p>
+              <p class="text-xs sm:text-sm text-espresso-700">ঐতিহ্যবাহী মন্থন পদ্ধতি</p>
+            </div>
+            <div>
+              <p class="font-bold text-espresso-900 text-base sm:text-lg">গ্লাস জার প্যাক</p>
+              <p class="text-xs sm:text-sm text-espresso-700">সুরক্ষিত ও স্বাস্থ্যসম্মত</p>
+            </div>
+            <div>
+              <p class="font-bold text-espresso-900 text-base sm:text-lg">ক্যাশ অন ডেলিভারি</p>
+              <p class="text-xs sm:text-sm text-espresso-700">পণ্য হাতে পেয়ে মূল্য দিন</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Visual Product Showcase -->
+        <div class="lg:col-span-6 relative">
+          <div class="relative mx-auto max-w-lg lg:max-w-none">
+            <!-- Decorative Golden Arch Frame -->
+            <div class="relative rounded-[28px] bg-gradient-to-b from-gold-200/70 via-white to-cream-200 p-3 sm:p-4 shadow-warm-lg border border-gold-300/60">
+              <div class="relative overflow-hidden rounded-[22px] aspect-[4/4.2] bg-espresso-900">
+                <!-- Local Asset Reference: assets/images/pureaura-hero-jar.jpg -->
+                <img
+                  src="https://images.unsplash.com/photo-1631452180519-c014fe946bc7?auto=format&fit=crop&w=1000&q=85"
+                  data-local-asset="assets/images/pureaura-hero-jar.jpg"
+                  alt="PureAura দেশি গরুর ঘি — কাঁচের জারে সোনালি দানাদার ঘি"
+                  class="w-full h-full object-cover object-center transform hover:scale-105 transition-transform duration-700"
+                  onerror="this.onerror=null;this.src='https://placehold.co/800x840/D99B26/2C1A0E?text=PureAura+Deshi+Ghee';"
+                />
+                <!-- Subtle Bottom Gradient Overlay with Product Label -->
+                <div class="absolute inset-x-0 bottom-0 bg-gradient-to-t from-espresso-950/85 via-espresso-950/35 to-transparent p-6 text-white">
+                  <div class="flex items-end justify-between gap-4">
+                    <div>
+                      <span class="inline-block px-2.5 py-0.5 rounded-md bg-gold-500 text-espresso-950 text-xs font-bold mb-1.5">সীমিত ব্যাচে প্রস্তুত</span>
+                      <h2 class="font-serif text-xl sm:text-2xl font-bold">PureAura দেশি গরুর ঘি</h2>
+                      <p class="text-xs sm:text-sm text-cream-200">ফুড-গ্রেড গ্লাস জারে সংরক্ষিত সোনালি ঘি</p>
+                    </div>
+                    <div class="text-right bg-white/15 backdrop-blur-md px-3.5 py-2 rounded-xl border border-white/25">
+                      <span class="block text-[11px] text-gold-200">শুরু মাত্র</span>
+                      <span class="font-num text-xl font-bold text-gold-300">৳300</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Floating Highlight Card 1 (Top Left) -->
+            <div class="hidden sm:flex animate-float absolute -left-6 top-8 bg-white/95 backdrop-blur-md px-4 py-3 rounded-2xl shadow-warm-lg border border-gold-200 items-center gap-3">
+              <div class="w-10 h-10 rounded-xl bg-gold-100 text-gold-600 flex items-center justify-center">
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z"/>
+                </svg>
+              </div>
+              <div>
+                <p class="text-xs text-espresso-700 font-medium">প্রাকৃতিক সুগন্ধ</p>
+                <p class="text-sm font-bold text-espresso-900">ধীর আঁচে জ্বাল দেওয়া</p>
+              </div>
+            </div>
+
+            <!-- Floating Highlight Card 2 (Bottom Right) -->
+            <div class="hidden sm:flex animate-float-delayed absolute -right-5 bottom-24 bg-espresso-900 text-cream-50 px-4 py-3 rounded-2xl shadow-warm-lg border border-gold-500/40 items-center gap-3">
+              <div class="w-10 h-10 rounded-xl bg-gold-500/20 text-gold-400 flex items-center justify-center">
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                </svg>
+              </div>
+              <div>
+                <p class="text-xs text-gold-300 font-medium">ঐতিহ্যবাহী স্বাদ</p>
+                <p class="text-sm font-bold text-white">কোনো কৃত্রিম ফ্লেভার নয়</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- =====================================================================
+       3. ABOUT OUR GHEE (আমাদের ঘি সম্পর্কে)
+  ====================================================================== -->
+  <section id="about" class="py-16 sm:py-24 bg-white relative">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <!-- Section Header -->
+      <div class="text-center max-w-3xl mx-auto mb-14 reveal">
+        <span class="inline-block px-3.5 py-1 rounded-full bg-gold-100 text-gold-700 font-semibold text-sm mb-3">ঐতিহ্য ও প্রস্তুত প্রণালী</span>
+        <h2 class="font-serif text-3xl sm:text-4xl font-bold text-espresso-900 mb-4">দেশি গরুর দুধ থেকে যেভাবে তৈরি হয় PureAura ঘি</h2>
+        <p class="text-espresso-700 text-base sm:text-lg leading-relaxed">
+          আমরা বিশ্বাস করি ভালো ঘি-এর আসল রহস্য লুকিয়ে থাকে ধৈর্য ও সঠিক ঐতিহ্যবাহী প্রক্রিয়ায়। নির্বাচিত গ্রামীণ খামারিদের কাছ থেকে সংগৃহীত দেশি গরুর দুধ থেকে ধাপে ধাপে যত্ন নিয়ে তৈরি করা হয় আমাদের প্রতিটি ব্যাচ।
+        </p>
+      </div>
+
+      <!-- Main Feature Split + 3-Step Timeline -->
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
+        <!-- Left Photo Collage Card -->
+        <div class="lg:col-span-5 reveal">
+          <div class="relative rounded-3xl overflow-hidden shadow-warm-lg border border-cream-300 bg-cream-100">
+            <!-- Local Asset Reference: assets/images/ghee-making-process.jpg -->
+            <img
+              src="https://images.unsplash.com/photo-1589985270826-4b7bb135bc9d?auto=format&fit=crop&w=900&q=85"
+              data-local-asset="assets/images/ghee-making-process.jpg"
+              alt="ঐতিহ্যবাহী পদ্ধতিতে দেশি গরুর দুধ ও মাখন থেকে ঘি তৈরি"
+              class="w-full h-[380px] sm:h-[440px] object-cover"
+              onerror="this.onerror=null;this.src='https://placehold.co/800x900/F3EAD8/2C1A0E?text=Traditional+Ghee+Craft';"
+            />
+            <div class="p-6 bg-cream-50 border-t border-gold-200">
+              <div class="flex items-start gap-3.5">
+                <div class="w-10 h-10 rounded-xl bg-gold-500/15 text-gold-600 flex items-center justify-center shrink-0 mt-0.5">
+                  <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                  </svg>
+                </div>
+                <div>
+                  <h3 class="font-bold text-espresso-900 text-base">সংগ্রহ ও উৎপাদনে স্বচ্ছতা</h3>
+                  <p class="text-sm text-espresso-700 mt-1 leading-relaxed">
+                    বড় কোনো বাণিজ্যিক কারখানার তাড়াহুড়ো নয়—ছোট ছোট সীমিত ব্যাচে দুধ সংগ্রহ, দই পাতা ও জ্বাল দেওয়ার প্রতিটি ধাপ সরাসরি তদারকি করা হয়।
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right 3-Step Traditional Process Cards -->
+        <div class="lg:col-span-7 space-y-5 reveal">
+          <!-- Step 1 -->
+          <div class="p-6 sm:p-7 rounded-2xl bg-cream-100/80 hover:bg-cream-100 border border-gold-200/80 transition-all shadow-warm flex flex-col sm:flex-row gap-5">
+            <div class="w-14 h-14 rounded-2xl bg-gold-500 text-espresso-950 font-num font-bold text-xl flex items-center justify-center shrink-0 shadow-gold">
+              ০১
+            </div>
+            <div>
+              <h3 class="font-serif text-xl font-bold text-espresso-900 mb-1.5">দেশি গরুর দুধ সংগ্রহ ও দই পাতা</h3>
+              <p class="text-espresso-700 text-base leading-relaxed">
+                স্থানীয় খামারিদের কাছ থেকে সংগৃহীত দেশি গরুর তাজা দুধ ভালোভাবে ফুটিয়ে মাটির বা পরিষ্কার পাত্রে প্রাকৃতিকভাবে দই পাতা হয়। এতে ঘি-এর ভেতর তৈরি হয় চমৎকার পুষ্টিগুণ ও মিষ্টি ঘ্রাণ।
+              </p>
+            </div>
+          </div>
+
+          <!-- Step 2 -->
+          <div class="p-6 sm:p-7 rounded-2xl bg-cream-100/80 hover:bg-cream-100 border border-gold-200/80 transition-all shadow-warm flex flex-col sm:flex-row gap-5">
+            <div class="w-14 h-14 rounded-2xl bg-gold-500 text-espresso-950 font-num font-bold text-xl flex items-center justify-center shrink-0 shadow-gold">
+              ০২
+            </div>
+            <div>
+              <h3 class="font-serif text-xl font-bold text-espresso-900 mb-1.5">মন্থন করে সাদা মাখন তোলা</h3>
+              <p class="text-espresso-700 text-base leading-relaxed">
+                জমে যাওয়া দই ঐতিহ্যবাহী মন্থন প্রক্রিয়ায় ঘুঁটে আলাদা করা হয় নরম ও সতেজ মাখন (ননী)। এরপর পরিষ্কার পানি দিয়ে মাখন ধুয়ে নেওয়া হয় যেন কোনো টক ভাব না থাকে।
+              </p>
+            </div>
+          </div>
+
+          <!-- Step 3 -->
+          <div class="p-6 sm:p-7 rounded-2xl bg-cream-100/80 hover:bg-cream-100 border border-gold-200/80 transition-all shadow-warm flex flex-col sm:flex-row gap-5">
+            <div class="w-14 h-14 rounded-2xl bg-gold-500 text-espresso-950 font-num font-bold text-xl flex items-center justify-center shrink-0 shadow-gold">
+              ০৩
+            </div>
+            <div>
+              <h3 class="font-serif text-xl font-bold text-espresso-900 mb-1.5">ধীর আঁচে জ্বাল দিয়ে দানাদার সোনালি ঘি</h3>
+              <p class="text-espresso-700 text-base leading-relaxed">
+                সংগৃহীত মাখন মৃদু ও নিয়ন্ত্রিত আঁচে ধীরে ধীরে জ্বাল দেওয়া হয়। সঠিক সোনালি রঙ ও মনমাতানো সুগন্ধ এলে ছাঁকনি দিয়ে ছেঁকে ঠান্ডা করা হয়, যার ফলে তৈরি হয় নিখুঁত দানাদার গঠন।
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =====================================================================
+       4. WHY CHOOSE PUREAURA (কেন PureAura বেছে নেবেন)
+  ====================================================================== -->
+  <section id="why-us" class="py-16 sm:py-24 bg-cream-100 bg-grain">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-3xl mx-auto mb-14 reveal">
+        <span class="inline-block px-3.5 py-1 rounded-full bg-white text-gold-700 border border-gold-300 font-semibold text-sm mb-3">আমাদের বিশেষত্ব</span>
+        <h2 class="font-serif text-3xl sm:text-4xl font-bold text-espresso-900 mb-4">কেন আপনার পরিবারের জন্য PureAura বেছে নেবেন?</h2>
+        <p class="text-espresso-700 text-base sm:text-lg">
+          প্রতিদিনের খাবারে বিশুদ্ধতা ও ঘরোয়া স্বাদের নিশ্চয়তা দিতে আমরা প্রতিটি বিষয়ে বিশেষ যত্ন নিই।
+        </p>
+      </div>
+
+      <!-- 5 Feature Cards Grid -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 reveal">
+        <!-- Card 1 -->
+        <div class="bg-white p-7 rounded-3xl shadow-warm border border-gold-200/70 hover:-translate-y-1 transition-all">
+          <div class="w-13 h-13 w-12 h-12 rounded-2xl bg-gold-100 text-gold-600 flex items-center justify-center mb-5">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"/>
+            </svg>
+          </div>
+          <h3 class="font-serif text-xl font-bold text-espresso-900 mb-2">প্রাকৃতিক উপাদান</h3>
+          <p class="text-espresso-700 leading-relaxed">
+            শুধুমাত্র দেশি গরুর দুধের মাখন থেকে প্রস্তুত। কোনো ধরনের উদ্ভিজ্জ তেল, ডালডা বা অপ্রয়োজনীয় উপাদান মেশানো হয় না।
+          </p>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="bg-white p-7 rounded-3xl shadow-warm border border-gold-200/70 hover:-translate-y-1 transition-all">
+          <div class="w-12 h-12 rounded-2xl bg-gold-100 text-gold-600 flex items-center justify-center mb-5">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M14.828 14.828a4 4 0 01-5.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
+            </svg>
+          </div>
+          <h3 class="font-serif text-xl font-bold text-espresso-900 mb-2">ঘি-এর নিজস্ব সুগন্ধ</h3>
+          <p class="text-espresso-700 leading-relaxed">
+            জারের ঢাকনা খুললেই পাবেন ধীর আঁচে জ্বাল দেওয়া খাঁটি ঘি-এর স্নিগ্ধ ও স্বাভাবিক সুগন্ধ, যা খাবারের রুচি বাড়িয়ে দেয় বহুগুণ।
+          </p>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="bg-white p-7 rounded-3xl shadow-warm border border-gold-200/70 hover:-translate-y-1 transition-all">
+          <div class="w-12 h-12 rounded-2xl bg-gold-100 text-gold-600 flex items-center justify-center mb-5">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/>
+            </svg>
+          </div>
+          <h3 class="font-serif text-xl font-bold text-espresso-900 mb-2">ঐতিহ্যবাহী স্বাদ</h3>
+          <p class="text-espresso-700 leading-relaxed">
+            আগের দিনের দাদি-নানিদের হাতে তৈরি ঘরোয়া ঘি-এর সেই চিরচেনা দানাদার টেক্সচার ও গভীর স্বাদ ফিরিয়ে আনবে প্রতিটি চামচে।
+          </p>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="bg-white p-7 rounded-3xl shadow-warm border border-gold-200/70 hover:-translate-y-1 transition-all">
+          <div class="w-12 h-12 rounded-2xl bg-gold-100 text-gold-600 flex items-center justify-center mb-5">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/>
+            </svg>
+          </div>
+          <h3 class="font-serif text-xl font-bold text-espresso-900 mb-2">পরিষ্কার ও স্বাস্থ্যসম্মত প্যাকেজিং</h3>
+          <p class="text-espresso-700 leading-relaxed">
+            ঘি-এর স্বাদ ও গুণমান দীর্ঘদিন অটুট রাখতে জীবাণুমুক্ত ফুড-গ্রেড কাঁচের জারে এয়ার-টাইট সিল করে প্যাক করা হয়।
+          </p>
+        </div>
+
+        <!-- Card 5 (Spans 2 cols on lg for balanced 3+2 layout) -->
+        <div class="bg-espresso-900 text-cream-50 p-7 rounded-3xl shadow-warm-lg border border-gold-500/30 sm:col-span-2 lg:col-span-2 flex flex-col sm:flex-row items-start sm:items-center gap-6">
+          <div class="w-14 h-14 rounded-2xl bg-gold-500/20 text-gold-400 flex items-center justify-center shrink-0">
+            <svg class="w-7 h-7" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M18.364 18.364A9 9 0 005.636 5.636m12.728 12.728A9 9 0 015.636 5.636m12.728 12.728L5.636 5.636"/>
+            </svg>
+          </div>
+          <div>
+            <h3 class="font-serif text-xl sm:text-2xl font-bold text-gold-300 mb-2">কোনো কৃত্রিম রং বা ফ্লেভার সংযোজন করা হয় না</h3>
+            <p class="text-cream-200 leading-relaxed">
+              বাজারের অনেক ঘি-এ উজ্জ্বল হলুদ রং বা কৃত্রিম এসেন্স ব্যবহার করা হয়। PureAura-তে আমরা কোনো কৃত্রিম রং, প্রিজারভেটিভ বা ফ্লেভার ব্যবহার করি না—এর সোনালি আভা আসে সম্পূর্ণ প্রাকৃতিকভাবে জ্বাল দেওয়ার প্রক্রিয়া থেকে।
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =====================================================================
+       5. QUALITY ASSURANCE (মান যাচাই ও স্বচ্ছতা)
+  ====================================================================== -->
+  <section id="quality" class="py-16 sm:py-24 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="rounded-[32px] bg-gradient-to-br from-cream-100 via-cream-50 to-gold-100/60 border border-gold-300/60 p-6 sm:p-10 lg:p-14 shadow-warm reveal">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
+          <div class="lg:col-span-5 space-y-4">
+            <span class="inline-block px-3.5 py-1 rounded-full bg-espresso-900 text-gold-300 font-semibold text-xs tracking-wide">স্বচ্ছতা ও মান নিয়ন্ত্রণ</span>
+            <h2 class="font-serif text-3xl sm:text-4xl font-bold text-espresso-900 leading-tight">
+              প্রতিটি জারে আমাদের সততা ও মান যাচাইয়ের প্রতিশ্রুতি
+            </h2>
+            <p class="text-espresso-700 leading-relaxed">
+              আমরা অতিরঞ্জিত কোনো দাবি করি না; বরং আমাদের উৎপাদন প্রক্রিয়া এবং মান যাচাইয়ের প্রতিটি ধাপ ক্রেতাদের সামনে পরিষ্কারভাবে তুলে ধরি।
+            </p>
+            <div class="pt-2">
+              <div class="p-4 rounded-2xl bg-white/90 border border-gold-200 text-sm text-espresso-800">
+                <strong class="text-espresso-950">আমাদের নীতি:</strong> ছোট ব্যাচে উৎপাদন, প্রাকৃতিক উপাদানের ব্যবহার এবং সরাসরি ক্রেতার মতামতের ভিত্তিতে মান উন্নয়ন।
+              </div>
+            </div>
+          </div>
+
+          <div class="lg:col-span-7 grid grid-cols-1 sm:grid-cols-2 gap-5">
+            <!-- QA Item 1 -->
+            <div class="bg-white p-6 rounded-2xl border border-gold-200/80 shadow-sm">
+              <div class="flex items-center gap-3 mb-3">
+                <span class="w-9 h-9 rounded-xl bg-gold-100 text-gold-600 flex items-center justify-center font-bold">১</span>
+                <h3 class="font-bold text-espresso-900 text-lg">দুধের উৎস সম্পর্কে তথ্য</h3>
+              </div>
+              <p class="text-sm text-espresso-700 leading-relaxed">
+                পরিচিত ও বিশ্বস্ত গ্রামীণ খামারিদের কাছ থেকে সংগৃহীত দেশি গরুর দুধ ব্যবহার করা হয়, যেখানে প্রাকৃতিক ঘাস ও সুষম খাদ্যের ওপর গুরুত্ব দেওয়া হয়।
+              </p>
+            </div>
+
+            <!-- QA Item 2 -->
+            <div class="bg-white p-6 rounded-2xl border border-gold-200/80 shadow-sm">
+              <div class="flex items-center gap-3 mb-3">
+                <span class="w-9 h-9 rounded-xl bg-gold-100 text-gold-600 flex items-center justify-center font-bold">২</span>
+                <h3 class="font-bold text-espresso-900 text-lg">উৎপাদন প্রক্রিয়ার বিবরণ</h3>
+              </div>
+              <p class="text-sm text-espresso-700 leading-relaxed">
+                পরিষ্কার-পরিচ্ছন্ন পরিবেশে দই থেকে মাখন তুলে নিয়ন্ত্রিত তাপমাত্রায় জ্বাল দেওয়া হয়, যাতে পুষ্টিগুণ ও প্রাকৃতিক সুবাস নষ্ট না হয়।
+              </p>
+            </div>
+
+            <!-- QA Item 3 -->
+            <div class="bg-white p-6 rounded-2xl border border-gold-200/80 shadow-sm">
+              <div class="flex items-center gap-3 mb-3">
+                <span class="w-9 h-9 rounded-xl bg-gold-100 text-gold-600 flex items-center justify-center font-bold">৩</span>
+                <h3 class="font-bold text-espresso-900 text-lg">ব্যাচভিত্তিক মান যাচাই</h3>
+              </div>
+              <p class="text-sm text-espresso-700 leading-relaxed">
+                প্রতিটি ব্যাচ বোতলজাত করার আগে ঘি-এর ঘ্রাণ, সোনালি রঙ, দানাদার গঠন এবং আর্দ্রতার মাত্রা নিবিড়ভাবে পরীক্ষা করা হয়।
+              </p>
+            </div>
+
+            <!-- QA Item 4 -->
+            <div class="bg-white p-6 rounded-2xl border border-gold-200/80 shadow-sm">
+              <div class="flex items-center gap-3 mb-3">
+                <span class="w-9 h-9 rounded-xl bg-gold-100 text-gold-600 flex items-center justify-center font-bold">৪</span>
+                <h3 class="font-bold text-espresso-900 text-lg">প্যাকেজিং ও সংরক্ষণ পদ্ধতি</h3>
+              </div>
+              <p class="text-sm text-espresso-700 leading-relaxed">
+                প্লাস্টিকের পরিবর্তে স্বাস্থ্যসম্মত কাঁচের জারে ইন্ডাকশন সিল ও শক্ত ঢাকনা ব্যবহার করা হয়, যা বাইরের বাতাস ও আর্দ্রতা থেকে ঘি-কে সুরক্ষিত রাখে।
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =====================================================================
+       6. PRODUCT PRICING (প্যাকেজ ও মূল্য তালিকা)
+  ====================================================================== -->
+  <section id="pricing" class="py-16 sm:py-24 bg-cream-100 bg-grain">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-3xl mx-auto mb-12 reveal">
+        <span class="inline-block px-3.5 py-1 rounded-full bg-gold-200/70 text-espresso-900 font-semibold text-sm mb-3">সাশ্রয়ী ও পরিবারের উপযোগী প্যাকেজ</span>
+        <h2 class="font-serif text-3xl sm:text-4xl font-bold text-espresso-900 mb-3">আপনার প্রয়োজন অনুযায়ী প্যাকেজ বেছে নিন</h2>
+        <p class="text-espresso-700 text-base sm:text-lg">
+          ছোট পরিবারের দৈনন্দিন ব্যবহার কিংবা উৎসবের আয়োজনের জন্য তিনটি সুবিধাজনক সাইজে উপলব্ধ।
+        </p>
+        <!-- Transparent Demo Price Note -->
+        <p class="mt-3 inline-flex items-center gap-1.5 text-xs text-espresso-700 bg-white/80 px-3 py-1 rounded-full border border-gold-200">
+          <span>ℹ️ প্রদর্শিত মূল্যসমূহ ডেমো মূল্য (Store Config থেকে পরিবর্তনযোগ্য)</span>
+        </p>
+      </div>
+
+      <!-- Three Pricing Cards (Rendered & Synced via JS Config) -->
+      <div id="pricing-grid" class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto items-stretch reveal">
+        <!-- Populated dynamically from STORE_CONFIG for single source of truth, with clean SSR fallback structure -->
+      </div>
+    </div>
+  </section>
+
+  <!-- =====================================================================
+       7. HOW TO USE (কীভাবে খাবেন ও ব্যবহার করবেন)
+  ====================================================================== -->
+  <section id="how-to-use" class="py-16 sm:py-24 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-3xl mx-auto mb-14 reveal">
+        <span class="inline-block px-3.5 py-1 rounded-full bg-gold-100 text-gold-700 font-semibold text-sm mb-3">রসনাবিলাস ও পরিবেশন</span>
+        <h2 class="font-serif text-3xl sm:text-4xl font-bold text-espresso-900 mb-4">প্রতিদিনের খাবারে দেশি ঘি-এর অনন্য ব্যবহার</h2>
+        <p class="text-espresso-700 text-base sm:text-lg">
+          এক চামচ PureAura দেশি ঘি আপনার সাধারণ খাবারকেও করে তুলতে পারে রাজকীয় ও তৃপ্তিদায়ক।
+        </p>
+      </div>
+
+      <!-- 5 Culinary Cards Grid -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 reveal">
+        <!-- Dish 1: গরম ভাত -->
+        <div class="group rounded-3xl overflow-hidden bg-cream-50 border border-gold-200/80 shadow-warm hover:shadow-warm-lg transition-all">
+          <div class="h-52 overflow-hidden relative">
+            <!-- Local Asset: assets/images/ghee-hot-rice.jpg -->
+            <img
+              src="https://images.unsplash.com/photo-1516684732162-798a0062be99?auto=format&fit=crop&w=800&q=80"
+              data-local-asset="assets/images/ghee-hot-rice.jpg"
+              alt="ধোঁয়া ওঠা গরম ভাতের সাথে দেশি ঘি"
+              class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+              onerror="this.onerror=null;this.src='https://placehold.co/600x400/F3EAD8/2C1A0E?text=Hot+Rice+%26+Ghee';"
+            />
+            <span class="absolute top-3 left-3 bg-espresso-900/85 text-gold-300 text-xs font-semibold px-3 py-1 rounded-full backdrop-blur-sm">সবার প্রিয়</span>
+          </div>
+          <div class="p-6">
+            <h3 class="font-serif text-xl font-bold text-espresso-900 mb-2">গরম ভাত</h3>
+            <p class="text-espresso-700 text-sm sm:text-base leading-relaxed">
+              ধোঁয়া ওঠা সাদা গরম ভাতের সাথে এক চামচ খাঁটি দেশি ঘি, সাথে আলু ভর্তা বা ডাল—বাঙালির চিরায়ত তৃপ্তির খাবার।
+            </p>
+          </div>
+        </div>
+
+        <!-- Dish 2: খিচুড়ি -->
+        <div class="group rounded-3xl overflow-hidden bg-cream-50 border border-gold-200/80 shadow-warm hover:shadow-warm-lg transition-all">
+          <div class="h-52 overflow-hidden relative">
+            <!-- Local Asset: assets/images/ghee-khichuri.jpg -->
+            <img
+              src="https://images.unsplash.com/photo-1596797038530-2c107229654b?auto=format&fit=crop&w=800&q=80"
+              data-local-asset="assets/images/ghee-khichuri.jpg"
+              alt="ভুনা খিচুড়ির সাথে দেশি ঘি"
+              class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+              onerror="this.onerror=null;this.src='https://placehold.co/600x400/F3EAD8/2C1A0E?text=Bhuna+Khichuri';"
+            />
+          </div>
+          <div class="p-6">
+            <h3 class="font-serif text-xl font-bold text-espresso-900 mb-2">খিচুড়ি</h3>
+            <p class="text-espresso-700 text-sm sm:text-base leading-relaxed">
+              বৃষ্টির দিনে বা শীতের সকালে ভুনা খিচুড়ি নামানোর ঠিক আগে উপরে ছড়িয়ে দিন ১–২ চামচ ঘি, স্বাদ ও ঘ্রাণ হয়ে উঠবে অসাধারণ।
+            </p>
+          </div>
+        </div>
+
+        <!-- Dish 3: রুটি ও পরোটা -->
+        <div class="group rounded-3xl overflow-hidden bg-cream-50 border border-gold-200/80 shadow-warm hover:shadow-warm-lg transition-all">
+          <div class="h-52 overflow-hidden relative">
+            <!-- Local Asset: assets/images/ghee-paratha.jpg -->
+            <img
+              src="https://images.unsplash.com/photo-1626074353765-517a681e40be?auto=format&fit=crop&w=800&q=80"
+              data-local-asset="assets/images/ghee-paratha.jpg"
+              alt="গরম রুটি ও পরোটার সাথে দেশি ঘি"
+              class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+              onerror="this.onerror=null;this.src='https://placehold.co/600x400/F3EAD8/2C1A0E?text=Roti+%26+Paratha';"
+            />
+          </div>
+          <div class="p-6">
+            <h3 class="font-serif text-xl font-bold text-espresso-900 mb-2">রুটি ও পরোটা</h3>
+            <p class="text-espresso-700 text-sm sm:text-base leading-relaxed">
+              সকালের নাস্তায় গরম আটার রুটিতে হালকা ঘি মাখিয়ে কিংবা মুচমুচে পরোটা ভাজতে ব্যবহার করুন PureAura দেশি ঘি।
+            </p>
+          </div>
+        </div>
+
+        <!-- Dish 4: পোলাও -->
+        <div class="group rounded-3xl overflow-hidden bg-cream-50 border border-gold-200/80 shadow-warm hover:shadow-warm-lg transition-all">
+          <div class="h-52 overflow-hidden relative">
+            <!-- Local Asset: assets/images/ghee-polao.jpg -->
+            <img
+              src="https://images.unsplash.com/photo-1563379091339-03b21ab4a4f8?auto=format&fit=crop&w=800&q=80"
+              data-local-asset="assets/images/ghee-polao.jpg"
+              alt="শাহী পোলাও ও বিরিয়ানিতে দেশি ঘি"
+              class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+              onerror="this.onerror=null;this.src='https://placehold.co/600x400/F3EAD8/2C1A0E?text=Shahi+Polao';"
+            />
+          </div>
+          <div class="p-6">
+            <h3 class="font-serif text-xl font-bold text-espresso-900 mb-2">পোলাও</h3>
+            <p class="text-espresso-700 text-sm sm:text-base leading-relaxed">
+              উৎসব-পার্বণে শাহী পোলাও, বিরিয়ানি কিংবা তেহারি দমে বসানোর সময় সামান্য ঘি ছড়িয়ে দিলে প্রতিটি চাল ঝরঝরে ও সুবাসিত হয়।
+            </p>
+          </div>
+        </div>
+
+        <!-- Dish 5: বিভিন্ন রান্না (Spans 2 columns on desktop) -->
+        <div class="group rounded-3xl overflow-hidden bg-cream-50 border border-gold-200/80 shadow-warm hover:shadow-warm-lg transition-all sm:col-span-2 lg:col-span-2 grid grid-cols-1 md:grid-cols-12">
+          <div class="md:col-span-5 h-56 md:h-auto overflow-hidden">
+            <!-- Local Asset: assets/images/ghee-cooking-halwa.jpg -->
+            <img
+              src="https://images.unsplash.com/photo-1606491956689-2ea866880c84?auto=format&fit=crop&w=800&q=80"
+              data-local-asset="assets/images/ghee-cooking-halwa.jpg"
+              alt="হালুয়া, পায়েস ও বিভিন্ন রান্নায় দেশি ঘি"
+              class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+              onerror="this.onerror=null;this.src='https://placehold.co/600x400/F3EAD8/2C1A0E?text=Traditional+Cooking';"
+            />
+          </div>
+          <div class="md:col-span-7 p-6 sm:p-8 flex flex-col justify-center">
+            <span class="text-xs font-bold uppercase tracking-wider text-gold-600 mb-1">ঘরোয়া রান্না ও মিষ্টান্ন</span>
+            <h3 class="font-serif text-2xl font-bold text-espresso-900 mb-3">বিভিন্ন রান্না ও মিষ্টান্নে</h3>
+            <p class="text-espresso-700 text-sm sm:text-base leading-relaxed mb-4">
+              সুজি বা গাজরের হালুয়া, সেমাই, পায়েস, রোস্ট, রেজালা কিংবা ডালের শেষ ফোড়নে এক চামচ PureAura দেশি ঘি যোগ করলে পুরো রান্নার স্বাদই বদলে যায়।
+            </p>
+            <div class="flex flex-wrap gap-2">
+              <span class="px-3 py-1 rounded-full bg-white border border-gold-200 text-xs font-medium text-espresso-800">হালুয়া ও পায়েস</span>
+              <span class="px-3 py-1 rounded-full bg-white border border-gold-200 text-xs font-medium text-espresso-800">মাংসের রেজালা ও রোস্ট</span>
+              <span class="px-3 py-1 rounded-full bg-white border border-gold-200 text-xs font-medium text-espresso-800">ডালের ফোড়ন</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =====================================================================
+       8. CUSTOMER REVIEWS (নমুনা ক্রেতা মতামত)
+  ====================================================================== -->
+  <section class="py-16 sm:py-24 bg-cream-100 bg-grain">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-3xl mx-auto mb-12 reveal">
+        <span class="inline-block px-3.5 py-1 rounded-full bg-gold-200/70 text-espresso-900 font-semibold text-sm mb-3">অভিজ্ঞতা ও মতামত</span>
+        <h2 class="font-serif text-3xl sm:text-4xl font-bold text-espresso-900 mb-3">গ্রাহকদের নমুনা মতামত</h2>
+        <!-- Clear Sample Disclaimer Banner -->
+        <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-amber-100 border border-amber-300 text-amber-900 text-xs sm:text-sm font-medium">
+          <span>📋 নমুনা রিভিউ (Sample Reviews): ওয়েবসাইট ডিজাইন প্রদর্শনের জন্য ব্যবহৃত কাল্পনিক মতামত</span>
+        </div>
+      </div>
+
+      <!-- 3 Sample Review Cards -->
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-7 reveal">
+        <!-- Sample Review 1 -->
+        <div class="bg-white p-7 rounded-3xl shadow-warm border border-gold-200/80 flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between mb-4">
+              <div class="flex text-gold-500 gap-0.5" aria-label="৫ স্টার রেটিং">
+                <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+              </div>
+              <span class="text-[11px] font-semibold px-2.5 py-0.5 rounded-md bg-cream-200 text-espresso-700">নমুনা রিভিউ</span>
+            </div>
+            <p class="text-espresso-800 leading-relaxed mb-6">
+              “জারের মুখ খোলার সাথে সাথেই খুব সুন্দর একটা ঘরোয়া ঘি-এর ঘ্রাণ পাওয়া যায়। গরম ভাত আর খিচুড়ির সাথে খেতে দারুণ লেগেছে, দানাদার ভাবটাও বেশ স্পষ্ট।”
+            </p>
+          </div>
+          <div class="flex items-center gap-3.5 pt-4 border-t border-cream-200">
+            <div class="w-11 h-11 rounded-full bg-gold-200 text-espresso-900 font-bold flex items-center justify-center">ফা</div>
+            <div>
+              <h4 class="font-bold text-espresso-900 text-sm">ফারহানা আক্তার (নমুনা)</h4>
+              <p class="text-xs text-espresso-700">উত্তরা, ঢাকা • ৫০০ গ্রাম জার</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Sample Review 2 -->
+        <div class="bg-white p-7 rounded-3xl shadow-warm border border-gold-200/80 flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between mb-4">
+              <div class="flex text-gold-500 gap-0.5" aria-label="৫ স্টার রেটিং">
+                <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+              </div>
+              <span class="text-[11px] font-semibold px-2.5 py-0.5 rounded-md bg-cream-200 text-espresso-700">নমুনা রিভিউ</span>
+            </div>
+            <p class="text-espresso-800 leading-relaxed mb-6">
+              “কাঁচের জারে প্যাকিং করা থাকায় ঘি একদম সুরক্ষিত অবস্থায় হাতে পেয়েছি। সকালের নাশতায় পরোটা আর বাচ্চাদের খাবারে নিয়মিত ব্যবহার করছি।”
+            </p>
+          </div>
+          <div class="flex items-center gap-3.5 pt-4 border-t border-cream-200">
+            <div class="w-11 h-11 rounded-full bg-gold-200 text-espresso-900 font-bold flex items-center justify-center">তা</div>
+            <div>
+              <h4 class="font-bold text-espresso-900 text-sm">তানভীর আহমেদ (নমুনা)</h4>
+              <p class="text-xs text-espresso-700">ধানমন্ডি, ঢাকা • ১ কেজি জার</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Sample Review 3 -->
+        <div class="bg-white p-7 rounded-3xl shadow-warm border border-gold-200/80 flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between mb-4">
+              <div class="flex text-gold-500 gap-0.5" aria-label="৫ স্টার রেটিং">
+                <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+              </div>
+              <span class="text-[11px] font-semibold px-2.5 py-0.5 rounded-md bg-cream-200 text-espresso-700">নমুনা রিভিউ</span>
+            </div>
+            <p class="text-espresso-800 leading-relaxed mb-6">
+              “বাসায় পোলাও আর গাজরের হালুয়া রান্নায় ব্যবহার করেছিলাম। কোনো অতিরিক্ত কৃত্রিম গন্ধ নেই, একদম গ্রামের বাড়ির তৈরি ঘি-এর মতো স্বাদ।”
+            </p>
+          </div>
+          <div class="flex items-center gap-3.5 pt-4 border-t border-cream-200">
+            <div class="w-11 h-11 rounded-full bg-gold-200 text-espresso-900 font-bold flex items-center justify-center">রা</div>
+            <div>
+              <h4 class="font-bold text-espresso-900 text-sm">রাশেদা বেগম (নমুনা)</h4>
+              <p class="text-xs text-espresso-700">চট্টগ্রাম • ৫০০ গ্রাম জার</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =====================================================================
+       9. FAQ SECTION (সচরাচর জিজ্ঞাসিত প্রশ্নাবলী)
+  ====================================================================== -->
+  <section id="faq" class="py-16 sm:py-24 bg-white">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-12 reveal">
+        <span class="inline-block px-3.5 py-1 rounded-full bg-gold-100 text-gold-700 font-semibold text-sm mb-3">জিজ্ঞাসা ও উত্তর</span>
+        <h2 class="font-serif text-3xl sm:text-4xl font-bold text-espresso-900 mb-3">সচরাচর জিজ্ঞাসিত প্রশ্নাবলী</h2>
+        <p class="text-espresso-700 text-base sm:text-lg">PureAura দেশি ঘি সম্পর্কে আপনার মনে থাকা সাধারণ প্রশ্নগুলোর উত্তর নিচে দেওয়া হলো।</p>
+      </div>
+
+      <!-- Accessible Accordion List -->
+      <div class="space-y-4 reveal" id="faq-container">
+        <!-- FAQ 1 -->
+        <div class="faq-item active rounded-2xl border border-gold-200 bg-cream-50 overflow-hidden transition-all">
+          <button type="button" class="faq-btn w-full px-6 py-5 text-left flex items-center justify-between gap-4 font-serif text-lg sm:text-xl font-bold text-espresso-900 hover:bg-cream-100 transition-colors">
+            <span>১. ঘি কীভাবে তৈরি করা হয়?</span>
+            <svg class="faq-icon w-5 h-5 text-gold-600 shrink-0 transition-transform duration-300" fill="none" stroke="currentColor" stroke-width="2.4" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/>
+            </svg>
+          </button>
+          <div class="faq-content">
+            <div class="faq-inner">
+              <p class="px-6 pb-5 text-espresso-700 leading-relaxed border-t border-gold-200/50 pt-3">
+                দেশি গরুর দুধ সংগ্রহ করে প্রথমে প্রাকৃতিকভাবে দই পাতা হয়। এরপর ঐতিহ্যবাহী মন্থন প্রক্রিয়ায় দই থেকে মাখন তুলে পরিষ্কার পানিতে ধুয়ে নেওয়া হয় এবং মৃদু আঁচে ধীরে ধীরে জ্বাল দিয়ে সোনালি দানাদার ঘি তৈরি করা হয়।
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- FAQ 2 -->
+        <div class="faq-item rounded-2xl border border-gold-200 bg-cream-50 overflow-hidden transition-all">
+          <button type="button" class="faq-btn w-full px-6 py-5 text-left flex items-center justify-between gap-4 font-serif text-lg sm:text-xl font-bold text-espresso-900 hover:bg-cream-100 transition-colors">
+            <span>২. ঘি কীভাবে সংরক্ষণ করতে হবে?</span>
+            <svg class="faq-icon w-5 h-5 text-gold-600 shrink-0 transition-transform duration-300" fill="none" stroke="currentColor" stroke-width="2.4" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/>
+            </svg>
+          </button>
+          <div class="faq-content">
+            <div class="faq-inner">
+              <p class="px-6 pb-5 text-espresso-700 leading-relaxed border-t border-gold-200/50 pt-3">
+                ঘি সরাসরি সূর্যের আলো ও চুলার তাপ থেকে দূরে ঠান্ডা ও শুষ্ক স্থানে কাঁচের জারে মুখ ভালোভাবে বন্ধ করে রাখুন। ঘি তোলার সময় সবসময় পরিষ্কার ও শুকনো চামচ ব্যবহার করুন—ভেজা চামচ ব্যবহার করলে ঘি নষ্ট হয়ে যেতে পারে।
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- FAQ 3 -->
+        <div class="faq-item rounded-2xl border border-gold-200 bg-cream-50 overflow-hidden transition-all">
+          <button type="button" class="faq-btn w-full px-6 py-5 text-left flex items-center justify-between gap-4 font-serif text-lg sm:text-xl font-bold text-espresso-900 hover:bg-cream-100 transition-colors">
+            <span>৩. কতদিন ভালো থাকে?</span>
+            <svg class="faq-icon w-5 h-5 text-gold-600 shrink-0 transition-transform duration-300" fill="none" stroke="currentColor" stroke-width="2.4" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/>
+            </svg>
+          </button>
+          <div class="faq-content">
+            <div class="faq-inner">
+              <p class="px-6 pb-5 text-espresso-700 leading-relaxed border-t border-gold-200/50 pt-3">
+                সঠিকভাবে শুষ্ক ও ঠান্ডা জায়গায় এয়ার-টাইট কাঁচের জারে সংরক্ষণ করলে উৎপাদন তারিখ থেকে সাধারণত ৬ থেকে ৯ মাস পর্যন্ত ঘি-এর স্বাদ ও ঘ্রাণ ভালো থাকে।
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- FAQ 4 -->
+        <div class="faq-item rounded-2xl border border-gold-200 bg-cream-50 overflow-hidden transition-all">
+          <button type="button" class="faq-btn w-full px-6 py-5 text-left flex items-center justify-between gap-4 font-serif text-lg sm:text-xl font-bold text-espresso-900 hover:bg-cream-100 transition-colors">
+            <span>৪. ডেলিভারি কতদিনে পাব?</span>
+            <svg class="faq-icon w-5 h-5 text-gold-600 shrink-0 transition-transform duration-300" fill="none" stroke="currentColor" stroke-width="2.4" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/>
+            </svg>
+          </button>
+          <div class="faq-content">
+            <div class="faq-inner">
+              <p class="px-6 pb-5 text-espresso-700 leading-relaxed border-t border-gold-200/50 pt-3">
+                (ডেমো ডেলিভারি তথ্য) ঢাকার ভেতরে সাধারণত ১–২ কর্মদিবস এবং ঢাকার বাইরে সারা বাংলাদেশে ২–৪ কর্মদিবসের মধ্যে হোম ডেলিভারি পৌঁছে দেওয়া হয়।
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- FAQ 5 -->
+        <div class="faq-item rounded-2xl border border-gold-200 bg-cream-50 overflow-hidden transition-all">
+          <button type="button" class="faq-btn w-full px-6 py-5 text-left flex items-center justify-between gap-4 font-serif text-lg sm:text-xl font-bold text-espresso-900 hover:bg-cream-100 transition-colors">
+            <span>৫. কীভাবে অর্ডার করব?</span>
+            <svg class="faq-icon w-5 h-5 text-gold-600 shrink-0 transition-transform duration-300" fill="none" stroke="currentColor" stroke-width="2.4" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/>
+            </svg>
+          </button>
+          <div class="faq-content">
+            <div class="faq-inner">
+              <p class="px-6 pb-5 text-espresso-700 leading-relaxed border-t border-gold-200/50 pt-3">
+                খুবই সহজ! নিচের অর্ডার ফর্মে আপনার নাম, মোবাইল নম্বর, সম্পূর্ণ ঠিকানা এবং পছন্দের প্যাকেজ (২৫০ গ্রাম, ৫০০ গ্রাম বা ১ কেজি) নির্বাচন করে “অর্ডার নিশ্চিত করুন” বাটনে ক্লিক করুন।
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =====================================================================
+       10. DELIVERY INFORMATION & INTERACTIVE ORDER FORM SECTION
+  ====================================================================== -->
+  <section id="order-section" class="py-16 sm:py-24 bg-cream-200/60 bg-grain border-t border-gold-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-3xl mx-auto mb-12 reveal">
+        <span class="inline-block px-3.5 py-1 rounded-full bg-gold-500 text-espresso-950 font-bold text-sm mb-3">সহজ অর্ডার ও হোম ডেলিভারি</span>
+        <h2 class="font-serif text-3xl sm:text-4xl font-bold text-espresso-900 mb-3">এখনই আপনার PureAura দেশি ঘি অর্ডার করুন</h2>
+        <p class="text-espresso-700 text-base sm:text-lg">
+          নিচের ফর্মটি পূরণ করে আপনার পছন্দের প্যাকেজ ও পরিমাণ নির্বাচন করুন। মোট মূল্য স্বয়ংক্রিয়ভাবে হিসাব হয়ে যাবে।
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-10 items-start reveal">
+        
+        <!-- Left Column: Delivery Info & Trust Summary -->
+        <div class="lg:col-span-5 space-y-6">
+          <!-- Delivery Info Card -->
+          <div class="bg-espresso-900 text-cream-50 p-7 sm:p-8 rounded-3xl shadow-warm-lg border border-gold-500/30">
+            <div class="flex items-center justify-between mb-6">
+              <h3 class="font-serif text-2xl font-bold text-gold-300">ডেলিভারি তথ্য</h3>
+              <span class="text-xs px-2.5 py-1 rounded-full bg-white/10 text-gold-200 border border-white/15">ডেমো তথ্য</span>
+            </div>
+
+            <ul class="space-y-5">
+              <li class="flex items-start gap-4">
+                <div class="w-10 h-10 rounded-xl bg-gold-500/20 text-gold-400 flex items-center justify-center shrink-0 mt-0.5">
+                  <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                  </svg>
+                </div>
+                <div>
+                  <h4 class="font-bold text-white text-base">সারা বাংলাদেশে হোম ডেলিভারি</h4>
+                  <p class="text-sm text-cream-200 mt-0.5">ঢাকা শহরসহ দেশের যেকোনো জেলা ও উপজেলায় নিরাপদ প্যাকেজিংয়ে হোম ডেলিভারি সুবিধা।</p>
+                </div>
+              </li>
+
+              <li class="flex items-start gap-4">
+                <div class="w-10 h-10 rounded-xl bg-gold-500/20 text-gold-400 flex items-center justify-center shrink-0 mt-0.5">
+                  <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M17 9V7a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2m2 4h10a2 2 0 002-2v-6a2 2 0 00-2-2H9a2 2 0 00-2 2v6a2 2 0 002 2zm7-5a2 2 0 11-4 0 2 2 0 014 0z"/>
+                  </svg>
+                </div>
+                <div>
+                  <h4 class="font-bold text-white text-base">ডেলিভারি চার্জ (এডিটেবল ডেমো মান)</h4>
+                  <p class="text-sm text-cream-200 mt-0.5">
+                    ঢাকার ভেতরে: <strong id="info-dhaka-charge" class="text-gold-300 font-num">৳60</strong> • 
+                    ঢাকার বাইরে: <strong id="info-outside-charge" class="text-gold-300 font-num">৳120</strong>
+                  </p>
+                </div>
+              </li>
+
+              <li class="flex items-start gap-4">
+                <div class="w-10 h-10 rounded-xl bg-gold-500/20 text-gold-400 flex items-center justify-center shrink-0 mt-0.5">
+                  <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                  </svg>
+                </div>
+                <div>
+                  <h4 class="font-bold text-white text-base">সম্ভাব্য ডেলিভারি সময় (ডেমো মান)</h4>
+                  <p id="info-delivery-time" class="text-sm text-cream-200 mt-0.5">ঢাকায় ১–২ কর্মদিবস এবং ঢাকার বাইরে ২–৪ কর্মদিবস।</p>
+                </div>
+              </li>
+
+              <li class="flex items-start gap-4">
+                <div class="w-10 h-10 rounded-xl bg-gold-500/20 text-gold-400 flex items-center justify-center shrink-0 mt-0.5">
+                  <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                  </svg>
+                </div>
+                <div>
+                  <h4 class="font-bold text-white text-base">ক্যাশ অন ডেলিভারি (COD)</h4>
+                  <p class="text-sm text-cream-200 mt-0.5">অগ্রিম পেমেন্ট ছাড়াই পণ্য হাতে পেয়ে ডেলিভারিম্যানের কাছে মূল্য পরিশোধের সুবিধা (ডেমো শর্তসাপেক্ষ)।</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Packaging Protection Note -->
+          <div class="bg-white p-6 rounded-3xl border border-gold-200 shadow-warm flex items-center gap-4">
+            <div class="w-12 h-12 rounded-2xl bg-gold-100 text-gold-600 flex items-center justify-center shrink-0">
+              <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4"/>
+              </svg>
+            </div>
+            <div>
+              <h4 class="font-bold text-espresso-900">বাবল-র‍্যাপ সুরক্ষিত গ্লাস জার</h4>
+              <p class="text-sm text-espresso-700">ডেলিভারির সময় কাঁচের জার সুরক্ষিত রাখতে বিশেষ বাবল-র‍্যাপ ও মজবুত কার্টন বক্স ব্যবহার করা হয়।</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Column: Interactive Order Form -->
+        <div class="lg:col-span-7">
+          <form id="order-form" novalidate class="bg-white p-6 sm:p-9 rounded-3xl shadow-warm-lg border border-gold-300/70 space-y-6">
+            <div class="flex flex-wrap items-center justify-between gap-2 pb-4 border-b border-cream-200">
+              <h3 class="font-serif text-2xl font-bold text-espresso-900">অর্ডার ফর্ম</h3>
+              <span class="text-xs font-medium text-espresso-700 bg-cream-100 px-3 py-1 rounded-full">ডেমো অর্ডার প্রিভিউ ফর্ম</span>
+            </div>
+
+            <!-- Package Selection Radio Cards -->
+            <div>
+              <label class="block text-sm font-bold text-espresso-900 mb-3">১. প্যাকেজ নির্বাচন করুন <span class="text-red-600">*</span></label>
+              <div id="form-package-options" class="grid grid-cols-1 sm:grid-cols-3 gap-3.5">
+                <!-- Populated dynamically from STORE_CONFIG -->
+              </div>
+            </div>
+
+            <!-- Quantity & Delivery Area Row -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
+              <!-- Quantity Stepper -->
+              <div>
+                <label for="order-qty" class="block text-sm font-bold text-espresso-900 mb-2">২. পরিমাণ (জার সংখ্যা)</label>
+                <div class="flex items-center rounded-2xl border border-gold-300 bg-cream-50 p-1">
+                  <button type="button" id="qty-minus" aria-label="পরিমাণ কমান" class="w-11 h-11 rounded-xl bg-white hover:bg-gold-100 text-espresso-900 font-bold text-xl flex items-center justify-center shadow-sm transition-colors">−</button>
+                  <input type="number" id="order-qty" name="quantity" value="1" min="1" max="50" class="w-full text-center bg-transparent font-num font-bold text-lg text-espresso-900 focus:outline-none" />
+                  <button type="button" id="qty-plus" aria-label="পরিমাণ বাড়ান" class="w-11 h-11 rounded-xl bg-white hover:bg-gold-100 text-espresso-900 font-bold text-xl flex items-center justify-center shadow-sm transition-colors">+</button>
+                </div>
+              </div>
+
+              <!-- Delivery Area Selector -->
+              <div>
+                <label for="delivery-area" class="block text-sm font-bold text-espresso-900 mb-2">৩. ডেলিভারি এলাকা</label>
+                <select id="delivery-area" name="area" class="w-full h-[54px] px-4 rounded-2xl border border-gold-300 bg-cream-50 text-espresso-900 font-medium focus:outline-none focus:border-gold-500 focus:ring-2 focus:ring-gold-300/50">
+                  <option value="dhaka">ঢাকার ভেতরে (৳60)</option>
+                  <option value="outside">ঢাকার বাইরে সারা বাংলাদেশ (৳120)</option>
+                </select>
+              </div>
+            </div>
+
+            <!-- Customer Name & Phone Number -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
+              <div>
+                <label for="customer-name" class="block text-sm font-bold text-espresso-900 mb-2">আপনার নাম <span class="text-red-600">*</span></label>
+                <input type="text" id="customer-name" name="name" required placeholder="যেমন: মোঃ আরিফুল ইসলাম" class="w-full px-4 py-3.5 rounded-2xl border border-gold-300 bg-cream-50 text-espresso-900 placeholder:text-espresso-700/50 focus:outline-none focus:border-gold-500 focus:ring-2 focus:ring-gold-300/50" />
+                <p id="error-name" class="hidden text-xs text-red-600 mt-1.5 font-medium">অনুগ্রহ করে আপনার পূর্ণ নাম লিখুন।</p>
+              </div>
+
+              <div>
+                <label for="customer-phone" class="block text-sm font-bold text-espresso-900 mb-2">মোবাইল নম্বর <span class="text-red-600">*</span></label>
+                <input type="tel" id="customer-phone" name="phone" required placeholder="যেমন: 017XXXXXXXX" class="w-full px-4 py-3.5 rounded-2xl border border-gold-300 bg-cream-50 text-espresso-900 font-num placeholder:font-sans placeholder:text-espresso-700/50 focus:outline-none focus:border-gold-500 focus:ring-2 focus:ring-gold-300/50" />
+                <p id="error-phone" class="hidden text-xs text-red-600 mt-1.5 font-medium">সঠিক ১১ ডিজিটের মোবাইল নম্বর লিখুন।</p>
+              </div>
+            </div>
+
+            <!-- Full Delivery Address -->
+            <div>
+              <label for="customer-address" class="block text-sm font-bold text-espresso-900 mb-2">সম্পূর্ণ ডেলিভারি ঠিকানা <span class="text-red-600">*</span></label>
+              <textarea id="customer-address" name="address" rows="2" required placeholder="বাসা নং, রোড নং, এলাকা, থানা ও জেলার নাম লিখুন..." class="w-full px-4 py-3 rounded-2xl border border-gold-300 bg-cream-50 text-espresso-900 placeholder:text-espresso-700/50 focus:outline-none focus:border-gold-500 focus:ring-2 focus:ring-gold-300/50"></textarea>
+              <p id="error-address" class="hidden text-xs text-red-600 mt-1.5 font-medium">অনুগ্রহ করে আপনার সম্পূর্ণ ডেলিভারি ঠিকানা লিখুন।</p>
+            </div>
+
+            <!-- Live Price Calculation Breakdown Box -->
+            <div class="p-5 rounded-2xl bg-cream-100 border border-gold-300/80 space-y-2.5">
+              <div class="flex justify-between text-sm text-espresso-800">
+                <span>নির্বাচিত প্যাকেজ:</span>
+                <span id="summary-package" class="font-semibold text-espresso-900">500g × 1</span>
+              </div>
+              <div class="flex justify-between text-sm text-espresso-800">
+                <span>পণ্যের মূল্য (Subtotal):</span>
+                <span id="summary-subtotal" class="font-num font-semibold text-espresso-900">৳550</span>
+              </div>
+              <div class="flex justify-between text-sm text-espresso-800">
+                <span>ডেলিভারি চার্জ:</span>
+                <span id="summary-delivery" class="font-num font-semibold text-espresso-900">৳60</span>
+              </div>
+              <div class="pt-3 border-t border-gold-300 flex items-center justify-between">
+                <span class="font-bold text-base sm:text-lg text-espresso-900">সর্বমোট মূল্য (Total):</span>
+                <span id="summary-total" class="font-num text-2xl sm:text-3xl font-bold text-gold-600">৳610</span>
+              </div>
+            </div>
+
+            <!-- Submit Button -->
+            <button type="submit" class="w-full btn-gold text-espresso-950 font-bold text-lg py-4 px-6 rounded-2xl shadow-gold flex items-center justify-center gap-2.5">
+              <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2.4" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/>
+              </svg>
+              <span>অর্ডার নিশ্চিত করুন</span>
+            </button>
+
+            <p class="text-center text-xs text-espresso-700">
+              * এটি একটি ফ্রন্টএন্ড ডেমো স্টোরফ্রন্ট; কোনো লাইভ সার্ভার বা পেমেন্ট গেটওয়ে সংযুক্ত নেই।
+            </p>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- =====================================================================
+       11. FOOTER
+  ====================================================================== -->
+  <footer class="bg-espresso-950 text-cream-200 pt-16 pb-10 border-t border-gold-500/20">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-10 pb-12 border-b border-white/10">
+        
+        <!-- Brand Column -->
+        <div class="lg:col-span-5 space-y-4">
+          <a href="#" class="inline-flex items-center gap-3">
+            <div class="w-11 h-11 rounded-2xl bg-gradient-to-br from-gold-400 to-gold-600 flex items-center justify-center">
+              <svg class="w-6 h-6 text-espresso-950" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M16 3C16 3 7 13.2 7 19.5C7 24.47 11.03 28.5 16 28.5C20.97 28.5 25 24.47 25 19.5C25 13.2 16 3 16 3Z" fill="currentColor"/>
+                <path d="M13.5 22.5C11.8 21.5 11 19.5 11.5 17.5" stroke="#FFFDF9" stroke-width="2" stroke-linecap="round"/>
+              </svg>
+            </div>
+            <div>
+              <span class="font-brand text-2xl font-bold text-white block leading-none">PureAura</span>
+              <span class="text-xs text-gold-300">প্রকৃতির খাঁটি স্বাদ, প্রতিটি চামচে</span>
+            </div>
+          </a>
+          <p class="text-sm text-cream-200/80 max-w-md leading-relaxed">
+            PureAura দেশি গরুর ঘি — ঐতিহ্যবাহী পদ্ধতিতে ধীর আঁচে প্রস্তুত সোনালি ও দানাদার দেশি ঘি। আপনার পরিবারের প্রতিদিনের খাবারে নিয়ে আসুন বিশুদ্ধতার স্পর্শ।
+          </p>
+          <!-- Social Link -->
+          <div class="pt-2">
+            <a id="footer-fb-link" href="https://facebook.com" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2.5 px-4 py-2.5 rounded-xl bg-white/10 hover:bg-gold-500 hover:text-espresso-950 text-white text-sm font-medium transition-colors">
+              <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24">
+                <path d="M22 12c0-5.52-4.48-10-10-10S2 6.48 2 12c0 4.84 3.44 8.87 8 9.8V15H8v-3h2V9.5C10 7.57 11.57 6 13.5 6H16v3h-2c-.55 0-1 .45-1 1v2h3v3h-3v6.95c5.05-.5 9-4.76 9-9.95z"/>
+              </svg>
+              <span>PureAura অফিশিয়াল ফেসবুক পেজ</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Quick Navigation Links -->
+        <div class="lg:col-span-3 space-y-3">
+          <h4 class="font-serif text-lg font-bold text-gold-300">দ্রুত লিংকসমূহ</h4>
+          <ul class="space-y-2.5 text-sm">
+            <li><a href="#about" class="hover:text-gold-400 transition-colors">আমাদের ঘি সম্পর্কে</a></li>
+            <li><a href="#why-us" class="hover:text-gold-400 transition-colors">কেন PureAura বেছে নেবেন</a></li>
+            <li><a href="#quality" class="hover:text-gold-400 transition-colors">মান যাচাই ও স্বচ্ছতা</a></li>
+            <li><a href="#pricing" class="hover:text-gold-400 transition-colors">প্যাকেজ ও মূল্য তালিকা</a></li>
+            <li><a href="#how-to-use" class="hover:text-gold-400 transition-colors">কীভাবে ব্যবহার করবেন</a></li>
+            <li><a href="#order-section" class="hover:text-gold-400 transition-colors">অর্ডার ফর্ম</a></li>
+          </ul>
+        </div>
+
+        <!-- Contact Info (Demo Placeholders) -->
+        <div class="lg:col-span-4 space-y-3">
+          <h4 class="font-serif text-lg font-bold text-gold-300">যোগাযোগ (ডেমো তথ্য)</h4>
+          <ul class="space-y-3 text-sm text-cream-200/90">
+            <li class="flex items-start gap-3">
+              <span class="text-gold-400 mt-0.5">📞</span>
+              <span id="footer-phone">+880 1700-000000 (সকাল ১০টা – রাত ৯টা)</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <span class="text-gold-400 mt-0.5">✉️</span>
+              <span id="footer-email">hello@pureaura-demo.com</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <span class="text-gold-400 mt-0.5">📍</span>
+              <span id="footer-address">ঢাকা, বাংলাদেশ (ডেমো ঠিকানা)</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Bottom Copyright -->
+      <div class="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-cream-200/70">
+        <p>© <span id="current-year">2026</span> PureAura. সর্বস্বত্ব সংরক্ষিত।</p>
+        <p>প্রকৃতির খাঁটি স্বাদ, প্রতিটি চামচে • PureAura Deshi Ghee</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- =====================================================================
+       MOBILE STICKY QUICK-ORDER BAR
+  ====================================================================== -->
+  <div class="fixed bottom-0 inset-x-0 z-40 md:hidden bg-white/95 backdrop-blur-md border-t border-gold-300 px-4 py-3 shadow-warm-lg flex items-center justify-between gap-3">
+    <div>
+      <span class="block text-[11px] text-espresso-700 font-medium">PureAura দেশি ঘি</span>
+      <span class="font-num font-bold text-espresso-900 text-base">৳300 – ৳1,050</span>
+    </div>
+    <a href="#order-section" class="btn-gold text-espresso-950 font-bold text-sm px-5 py-2.5 rounded-xl shadow-gold">
+      এখনই অর্ডার করুন
+    </a>
+  </div>
+
+  <!-- =====================================================================
+       ORDER SUMMARY PREVIEW MODAL (HONEST DEMO DISCLOSURE — NO ALERT())
+  ====================================================================== -->
+  <div id="order-modal" class="fixed inset-0 z-50 hidden items-center justify-center p-4 bg-espresso-950/75 backdrop-blur-sm">
+    <div class="bg-white w-full max-w-lg rounded-3xl shadow-warm-lg border border-gold-300 overflow-hidden animate-[fadeIn_0.25s_ease]">
+      <!-- Modal Header -->
+      <div class="bg-gradient-to-r from-espresso-900 to-espresso-800 px-6 py-5 text-white flex items-center justify-between">
+        <div>
+          <span class="text-xs font-semibold text-gold-300 uppercase tracking-wider">Order Summary Preview</span>
+          <h3 class="font-serif text-xl font-bold mt-0.5">অর্ডার বিবরণী প্রস্তুত হয়েছে</h3>
+        </div>
+        <button type="button" id="close-modal-btn" aria-label="বন্ধ করুন" class="w-9 h-9 rounded-full bg-white/10 hover:bg-white/20 flex items-center justify-center text-white">
+          ✕
+        </button>
+      </div>
+
+      <!-- Modal Body -->
+      <div class="p-6 space-y-5">
+        <!-- Honest Demo Storefront Notice -->
+        <div class="p-4 rounded-2xl bg-amber-50 border border-amber-300 text-amber-950 text-sm leading-relaxed">
+          <p class="font-bold mb-1">⚠️ ডেমো ওয়েবসাইট বিজ্ঞপ্তি (Demo Notice):</p>
+          <p>
+            এটি একটি ডেমো ল্যান্ডিং পেজ প্রিভিউ। এই ওয়েবসাইটে কোনো লাইভ ব্যাকএন্ড বা সার্ভার সংযুক্ত না থাকায় <strong>বাস্তব কোনো অর্ডার প্লেস হয়নি</strong>। আপনি চাইলে নিচের অর্ডার সারাংশ কপি করে সরাসরি মেসেজ বা ফোনের মাধ্যমে অর্ডার পাঠাতে পারেন।
+          </p>
+        </div>
+
+        <!-- Customer & Order Details Box -->
+        <div id="modal-summary-box" class="p-4 rounded-2xl bg-cream-100 border border-gold-200 text-sm text-espresso-900 space-y-2 font-medium">
+          <!-- Populated dynamically via JS -->
+        </div>
+
+        <!-- Action Buttons -->
+        <div class="flex flex-col sm:flex-row gap-3 pt-1">
+          <button type="button" id="copy-order-btn" class="flex-1 btn-gold text-espresso-950 font-bold py-3.5 px-5 rounded-2xl shadow-gold flex items-center justify-center gap-2">
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z"/>
+            </svg>
+            <span id="copy-btn-text">অর্ডার তথ্য কপি করুন</span>
+          </button>
+          <button type="button" id="close-modal-secondary" class="px-6 py-3.5 rounded-2xl bg-cream-200 hover:bg-cream-300 text-espresso-900 font-semibold transition-colors">
+            বন্ধ করুন
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- =====================================================================
+       VANILLA JAVASCRIPT: EDITABLE CONFIG, PRICING, CALCULATOR, ACCORDION
+  ====================================================================== -->
+  <script>
+    /**
+     * =====================================================================
+     * EDITABLE STORE CONFIGURATION (ডেমো মূল্য ও ডেলিভারি তথ্য এখান থেকে পরিবর্তনযোগ্য)
+     * =====================================================================
+     */
+    const STORE_CONFIG = {
+      currency: "৳",
+      packages: [
+        {
+          id: "250g",
+          weightLabel: "250g",
+          bengaliWeight: "২৫০ গ্রাম",
+          price: 300, // Editable demo price
+          popular: false,
+          subtitle: "প্রথমবার স্বাদ পরখ করার জন্য উপযুক্ত",
+          features: [
+            "ফুড-গ্রেড এয়ার-টাইট গ্লাস জার",
+            "ধীর আঁচে তৈরি দানাদার দেশি ঘি",
+            "ছোট পরিবারের দৈনন্দিন ব্যবহারের জন্য"
+          ]
+        },
+        {
+          id: "500g",
+          weightLabel: "500g",
+          bengaliWeight: "৫০০ গ্রাম",
+          price: 550, // Editable demo price
+          popular: true,
+          badgeText: "Popular Choice • জনপ্রিয় পছন্দ",
+          subtitle: "পরিবারের নিয়মিত ব্যবহারের সেরা পছন্দ",
+          features: [
+            "ফুড-গ্রেড সুরক্ষিত গ্লাস জার",
+            "২৫০ গ্রাম জারের তুলনায় সাশ্রয়ী মূল্য",
+            "ভাত, খিচুড়ি, রুটি ও রান্নার জন্য আদর্শ"
+          ]
+        },
+        {
+          id: "1kg",
+          weightLabel: "1kg",
+          bengaliWeight: "১ কেজি",
+          price: 1050, // Editable demo price
+          popular: false,
+          subtitle: "বড় পরিবার ও উৎসব-আয়োজনের ফ্যামিলি প্যাক",
+          features: [
+            "প্রিমিয়াম বড় ফুড-গ্রেড গ্লাস জার",
+            "সর্বোচ্চ সাশ্রয়ী ফ্যামিলি প্যাকেজ",
+            "দীর্ঘদিন সংরক্ষণের উপযোগী সিলড প্যাক"
+          ]
+        }
+      ],
+      delivery: {
+        dhakaCharge: 60,       // Editable demo delivery charge inside Dhaka
+        outsideCharge: 120,    // Editable demo delivery charge outside Dhaka
+        estimatedTimeText: "ঢাকায় ১–২ কর্মদিবস এবং ঢাকার বাইরে ২–৪ কর্মদিবস (ডেমো তথ্য)।"
+      },
+      contact: {
+        phone: "+880 1700-000000 (সকাল ১০টা – রাত ৯টা)",
+        email: "hello@pureaura-demo.com",
+        address: "ঢাকা, বাংলাদেশ (ডেমো ঠিকানা)",
+        facebookUrl: "https://facebook.com"
+      }
+    };
+
+    // Application State
+    let selectedPackageId = "500g"; // Default selected package (Popular Choice)
+    let currentOrderSummaryText = "";
+
+    document.addEventListener("DOMContentLoaded", () => {
+      initStoreContent();
+      initNavigation();
+      initOrderCalculator();
+      initFaqAccordion();
+      initScrollReveal();
+    });
+
+    /**
+     * 1. Render Pricing Cards, Form Radio Options, and Delivery/Contact Config
+     */
+    function initStoreContent() {
+      const pricingGrid = document.getElementById("pricing-grid");
+      const formPackageOptions = document.getElementById("form-package-options");
+      const deliverySelect = document.getElementById("delivery-area");
+
+      // Sync Delivery & Contact Text from Config
+      document.getElementById("info-dhaka-charge").textContent = `${STORE_CONFIG.currency}${STORE_CONFIG.delivery.dhakaCharge}`;
+      document.getElementById("info-outside-charge").textContent = `${STORE_CONFIG.currency}${STORE_CONFIG.delivery.outsideCharge}`;
+      document.getElementById("info-delivery-time").textContent = STORE_CONFIG.delivery.estimatedTimeText;
+      document.getElementById("footer-phone").textContent = STORE_CONFIG.contact.phone;
+      document.getElementById("footer-email").textContent = STORE_CONFIG.contact.email;
+      document.getElementById("footer-address").textContent = STORE_CONFIG.contact.address;
+      document.getElementById("footer-fb-link").href = STORE_CONFIG.contact.facebookUrl;
+      document.getElementById("current-year").textContent = new Date().getFullYear();
+
+      // Update Delivery Select Option Labels dynamically
+      deliverySelect.options[0].text = `ঢাকার ভেতরে (${STORE_CONFIG.currency}${STORE_CONFIG.delivery.dhakaCharge})`;
+      deliverySelect.options[1].text = `ঢাকার বাইরে সারা বাংলাদেশ (${STORE_CONFIG.currency}${STORE_CONFIG.delivery.outsideCharge})`;
+
+      // Render Pricing Section Cards
+      pricingGrid.innerHTML = STORE_CONFIG.packages.map(pkg => {
+        const formattedPrice = pkg.price.toLocaleString("en-US");
+        if (pkg.popular) {
+          return `
+            <div class="relative rounded-3xl bg-espresso-900 text-cream-50 p-8 shadow-warm-lg border-2 border-gold-400 flex flex-col justify-between transform md:-translate-y-3">
+              <div class="absolute -top-4 inset-x-0 flex justify-center">
+                <span class="bg-gradient-to-r from-gold-400 to-gold-500 text-espresso-950 text-xs font-bold px-4 py-1.5 rounded-full shadow-gold">
+                  ★ ${pkg.badgeText}
+                </span>
+              </div>
+              <div>
+                <div class="flex items-baseline justify-between mb-2 pt-2">
+                  <h3 class="font-serif text-2xl font-bold text-white">${pkg.bengaliWeight}</h3>
+                  <span class="font-num text-sm font-semibold text-gold-300">${pkg.weightLabel} Jar</span>
+                </div>
+                <p class="text-sm text-cream-200 mb-6">${pkg.subtitle}</p>
+                <div class="mb-6 pb-6 border-b border-white/15">
+                  <span class="font-num text-4xl sm:text-5xl font-bold text-gold-400">${STORE_CONFIG.currency}${formattedPrice}</span>
+                  <span class="text-xs text-cream-200 ml-1">/ জার (ডেমো মূল্য)</span>
+                </div>
+                <ul class="space-y-3 text-sm text-cream-100 mb-8">
+                  ${pkg.features.map(f => `
+                    <li class="flex items-start gap-2.5">
+                      <span class="text-gold-400 font-bold">✓</span>
+                      <span>${f}</span>
+                    </li>
+                  `).join("")}
+                </ul>
+              </div>
+              <button type="button" data-select-pkg="${pkg.id}" class="select-pkg-btn w-full btn-gold text-espresso-950 font-bold py-3.5 px-6 rounded-2xl shadow-gold transition-all">
+                এই প্যাকেজটি বেছে নিন
+              </button>
+            </div>
+          `;
+        }
+
+        return `
+          <div class="rounded-3xl bg-white p-8 shadow-warm border border-gold-200 flex flex-col justify-between hover:border-gold-400 transition-all">
+            <div>
+              <div class="flex items-baseline justify-between mb-2">
+                <h3 class="font-serif text-2xl font-bold text-espresso-900">${pkg.bengaliWeight}</h3>
+                <span class="font-num text-sm font-semibold text-espresso-700">${pkg.weightLabel} Jar</span>
+              </div>
+              <p class="text-sm text-espresso-700 mb-6">${pkg.subtitle}</p>
+              <div class="mb-6 pb-6 border-b border-cream-200">
+                <span class="font-num text-4xl font-bold text-espresso-900">${STORE_CONFIG.currency}${formattedPrice}</span>
+                <span class="text-xs text-espresso-700 ml-1">/ জার (ডেমো মূল্য)</span>
+              </div>
+              <ul class="space-y-3 text-sm text-espresso-800 mb-8">
+                ${pkg.features.map(f => `
+                  <li class="flex items-start gap-2.5">
+                    <span class="text-gold-600 font-bold">✓</span>
+                    <span>${f}</span>
+                  </li>
+                `).join("")}
+              </ul>
+            </div>
+            <button type="button" data-select-pkg="${pkg.id}" class="select-pkg-btn w-full bg-cream-100 hover:bg-gold-400 text-espresso-900 hover:text-espresso-950 font-bold py-3.5 px-6 rounded-2xl border border-gold-300 transition-colors">
+              এই প্যাকেজটি বেছে নিন
+            </button>
+          </div>
+        `;
+      }).join("");
+
+      // Render Order Form Package Radio Options
+      formPackageOptions.innerHTML = STORE_CONFIG.packages.map(pkg => {
+        const isChecked = pkg.id === selectedPackageId ? "checked" : "";
+        return `
+          <div class="relative">
+            <input type="radio" name="package" id="pkg-radio-${pkg.id}" value="${pkg.id}" class="pkg-radio sr-only" ${isChecked} />
+            <label for="pkg-radio-${pkg.id}" class="pkg-label block cursor-pointer p-3.5 rounded-2xl border-2 border-gold-200 bg-cream-50 hover:border-gold-400 transition-all">
+              <div class="flex items-center justify-between mb-1">
+                <span class="font-bold text-espresso-900 text-sm">${pkg.bengaliWeight} (${pkg.weightLabel})</span>
+                <span class="radio-dot w-4 h-4 rounded-full border-2 border-espresso-700/40 inline-block transition-all"></span>
+              </div>
+              <div class="flex items-center justify-between">
+                <span class="font-num font-bold text-base text-gold-600">${STORE_CONFIG.currency}${pkg.price.toLocaleString("en-US")}</span>
+                ${pkg.popular ? `<span class="text-[10px] font-bold bg-gold-200 text-espresso-900 px-2 py-0.5 rounded-full">জনপ্রিয়</span>` : ""}
+              </div>
+            </label>
+          </div>
+        `;
+      }).join("");
+
+      // Attach click listeners to Pricing Section buttons
+      document.querySelectorAll(".select-pkg-btn").forEach(btn => {
+        btn.addEventListener("click", () => {
+          const pkgId = btn.getAttribute("data-select-pkg");
+          const targetRadio = document.getElementById(`pkg-radio-${pkgId}`);
+          if (targetRadio) {
+            targetRadio.checked = true;
+            selectedPackageId = pkgId;
+            updateOrderSummary();
+          }
+          document.getElementById("order-section").scrollIntoView({ behavior: "smooth" });
+        });
+      });
+
+      // Attach change listeners to Form Radio buttons
+      document.querySelectorAll(".pkg-radio").forEach(radio => {
+        radio.addEventListener("change", (e) => {
+          selectedPackageId = e.target.value;
+          updateOrderSummary();
+        });
+      });
+    }
+
+    /**
+     * 2. Mobile Menu Drawer Toggle
+     */
+    function initNavigation() {
+      const menuBtn = document.getElementById("mobile-menu-btn");
+      const mobileMenu = document.getElementById("mobile-menu");
+      const iconOpen = document.getElementById("menu-icon-open");
+      const iconClose = document.getElementById("menu-icon-close");
+
+      menuBtn.addEventListener("click", () => {
+        const isHidden = mobileMenu.classList.contains("hidden");
+        mobileMenu.classList.toggle("hidden", !isHidden);
+        iconOpen.classList.toggle("hidden", isHidden);
+        iconClose.classList.toggle("hidden", !isHidden);
+      });
+
+      // Close mobile drawer when any link is tapped
+      document.querySelectorAll(".mobile-nav-link").forEach(link => {
+        link.addEventListener("click", () => {
+          mobileMenu.classList.add("hidden");
+          iconOpen.classList.remove("hidden");
+          iconClose.classList.add("hidden");
+        });
+      });
+    }
+
+    /**
+     * 3. Interactive Order Calculator, Validation & Demo Preview Modal
+     */
+    function initOrderCalculator() {
+      const qtyInput = document.getElementById("order-qty");
+      const qtyMinus = document.getElementById("qty-minus");
+      const qtyPlus = document.getElementById("qty-plus");
+      const areaSelect = document.getElementById("delivery-area");
+      const orderForm = document.getElementById("order-form");
+
+      qtyMinus.addEventListener("click", () => {
+        const current = parseInt(qtyInput.value, 10) || 1;
+        if (current > 1) {
+          qtyInput.value = current - 1;
+          updateOrderSummary();
+        }
+      });
+
+      qtyPlus.addEventListener("click", () => {
+        const current = parseInt(qtyInput.value, 10) || 1;
+        if (current < 50) {
+          qtyInput.value = current + 1;
+          updateOrderSummary();
+        }
+      });
+
+      qtyInput.addEventListener("input", () => {
+        let val = parseInt(qtyInput.value, 10);
+        if (isNaN(val) || val < 1) val = 1;
+        if (val > 50) val = 50;
+        qtyInput.value = val;
+        updateOrderSummary();
+      });
+
+      areaSelect.addEventListener("change", updateOrderSummary);
+
+      // Initial calculation on load
+      updateOrderSummary();
+
+      // Form Submission Handler
+      orderForm.addEventListener("submit", (e) => {
+        e.preventDefault();
+        if (!validateOrderForm()) return;
+
+        const name = document.getElementById("customer-name").value.trim();
+        const phone = document.getElementById("customer-phone").value.trim();
+        const address = document.getElementById("customer-address").value.trim();
+        const qty = parseInt(qtyInput.value, 10) || 1;
+        const area = areaSelect.value;
+        const pkg = STORE_CONFIG.packages.find(p => p.id === selectedPackageId) || STORE_CONFIG.packages[1];
+
+        const subtotal = pkg.price * qty;
+        const deliveryCharge = area === "dhaka" ? STORE_CONFIG.delivery.dhakaCharge : STORE_CONFIG.delivery.outsideCharge;
+        const total = subtotal + deliveryCharge;
+        const areaLabel = area === "dhaka" ? "ঢাকার ভেতরে" : "ঢাকার বাইরে";
+
+        // Populate Modal Preview
+        const modalSummaryBox = document.getElementById("modal-summary-box");
+        modalSummaryBox.innerHTML = `
+          <div class="flex justify-between"><span class="text-espresso-700">গ্রাহকের নাম:</span><span class="font-bold">${escapeHtml(name)}</span></div>
+          <div class="flex justify-between"><span class="text-espresso-700">মোবাইল নম্বর:</span><span class="font-num font-bold">${escapeHtml(phone)}</span></div>
+          <div class="flex justify-between gap-4"><span class="text-espresso-700 shrink-0">ঠিকানা:</span><span class="text-right">${escapeHtml(address)} (${areaLabel})</span></div>
+          <div class="border-t border-gold-200 pt-2 flex justify-between"><span class="text-espresso-700">প্যাকেজ ও পরিমাণ:</span><span class="font-bold">PureAura দেশি ঘি (${pkg.bengaliWeight}) × ${qty}টি</span></div>
+          <div class="flex justify-between"><span class="text-espresso-700">পণ্যের মূল্য:</span><span class="font-num">${STORE_CONFIG.currency}${subtotal.toLocaleString("en-US")}</span></div>
+          <div class="flex justify-between"><span class="text-espresso-700">ডেলিভারি চার্জ:</span><span class="font-num">${STORE_CONFIG.currency}${deliveryCharge.toLocaleString("en-US")}</span></div>
+          <div class="border-t border-gold-300 pt-2 flex justify-between text-base"><span class="font-bold">সর্বমোট মূল্য:</span><span class="font-num font-bold text-gold-600">${STORE_CONFIG.currency}${total.toLocaleString("en-US")}</span></div>
+        `;
+
+        // Plain-text summary for clipboard copy
+        currentOrderSummaryText = [
+          `PureAura দেশি ঘি — অর্ডার বিবরণী (Demo)`,
+          `নাম: ${name}`,
+          `মোবাইল: ${phone}`,
+          `ঠিকানা: ${address} (${areaLabel})`,
+          `প্যাকেজ: ${pkg.bengaliWeight} (${pkg.weightLabel}) × ${qty}টি`,
+          `সর্বমোট মূল্য: ${STORE_CONFIG.currency}${total.toLocaleString("en-US")}`
+        ].join("\n");
+
+        openOrderModal();
+      });
+
+      // Modal Close & Copy Controls
+      const modal = document.getElementById("order-modal");
+      document.getElementById("close-modal-btn").addEventListener("click", closeOrderModal);
+      document.getElementById("close-modal-secondary").addEventListener("click", closeOrderModal);
+      modal.addEventListener("click", (e) => {
+        if (e.target === modal) closeOrderModal();
+      });
+
+      document.getElementById("copy-order-btn").addEventListener("click", () => {
+        copyTextFallback(currentOrderSummaryText);
+        const btnText = document.getElementById("copy-btn-text");
+        btnText.textContent = "কপি সম্পন্ন হয়েছে ✓";
+        setTimeout(() => {
+          btnText.textContent = "অর্ডার তথ্য কপি করুন";
+        }, 2500);
+      });
+    }
+
+    function updateOrderSummary() {
+      const qty = parseInt(document.getElementById("order-qty").value, 10) || 1;
+      const area = document.getElementById("delivery-area").value;
+      const pkg = STORE_CONFIG.packages.find(p => p.id === selectedPackageId) || STORE_CONFIG.packages[1];
+
+      const subtotal = pkg.price * qty;
+      const deliveryCharge = area === "dhaka" ? STORE_CONFIG.delivery.dhakaCharge : STORE_CONFIG.delivery.outsideCharge;
+      const total = subtotal + deliveryCharge;
+
+      document.getElementById("summary-package").textContent = `${pkg.bengaliWeight} (${pkg.weightLabel}) × ${qty}`;
+      document.getElementById("summary-subtotal").textContent = `${STORE_CONFIG.currency}${subtotal.toLocaleString("en-US")}`;
+      document.getElementById("summary-delivery").textContent = `${STORE_CONFIG.currency}${deliveryCharge.toLocaleString("en-US")}`;
+      document.getElementById("summary-total").textContent = `${STORE_CONFIG.currency}${total.toLocaleString("en-US")}`;
+    }
+
+    function validateOrderForm() {
+      let isValid = true;
+      const nameInput = document.getElementById("customer-name");
+      const phoneInput = document.getElementById("customer-phone");
+      const addressInput = document.getElementById("customer-address");
+
+      const errName = document.getElementById("error-name");
+      const errPhone = document.getElementById("error-phone");
+      const errAddress = document.getElementById("error-address");
+
+      if (nameInput.value.trim().length < 2) {
+        errName.classList.remove("hidden");
+        isValid = false;
+      } else {
+        errName.classList.add("hidden");
+      }
+
+      // Accepts Bangladeshi phone format e.g. 017XXXXXXXX or +88017XXXXXXXX
+      const cleanedPhone = phoneInput.value.replace(/[\s-]/g, "");
+      const bdPhoneRegex = /^(?:\+?88)?01[3-9]\d{8}$/;
+      if (!bdPhoneRegex.test(cleanedPhone)) {
+        errPhone.classList.remove("hidden");
+        isValid = false;
+      } else {
+        errPhone.classList.add("hidden");
+      }
+
+      if (addressInput.value.trim().length < 6) {
+        errAddress.classList.remove("hidden");
+        isValid = false;
+      } else {
+        errAddress.classList.add("hidden");
+      }
+
+      return isValid;
+    }
+
+    function openOrderModal() {
+      const modal = document.getElementById("order-modal");
+      modal.classList.remove("hidden");
+      modal.classList.add("flex");
+    }
+
+    function closeOrderModal() {
+      const modal = document.getElementById("order-modal");
+      modal.classList.add("hidden");
+      modal.classList.remove("flex");
+    }
+
+    function copyTextFallback(text) {
+      const textarea = document.createElement("textarea");
+      textarea.value = text;
+      textarea.style.position = "fixed";
+      textarea.style.opacity = "0";
+      document.body.appendChild(textarea);
+      textarea.select();
+      try {
+        document.execCommand("copy");
+      } catch (err) {
+        console.error("Copy failed:", err);
+      }
+      document.body.removeChild(textarea);
+    }
+
+    function escapeHtml(str) {
+      const div = document.createElement("div");
+      div.textContent = str;
+      return div.innerHTML;
+    }
+
+    /**
+     * 4. FAQ Accordion Interaction
+     */
+    function initFaqAccordion() {
+      const faqItems = document.querySelectorAll(".faq-item");
+      faqItems.forEach(item => {
+        const btn = item.querySelector(".faq-btn");
+        btn.addEventListener("click", () => {
+          const isCurrentlyActive = item.classList.contains("active");
+          faqItems.forEach(other => other.classList.remove("active"));
+          if (!isCurrentlyActive) {
+            item.classList.add("active");
+          }
+        });
+      });
+    }
+
+    /**
+     * 5. Subtle Scroll Reveal Animation
+     */
+    function initScrollReveal() {
+      const reveals = document.querySelectorAll(".reveal");
+      if (!("IntersectionObserver" in window)) {
+        reveals.forEach(el => el.classList.add("visible"));
+        return;
+      }
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("visible");
+            observer.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.12 });
+
+      reveals.forEach(el => observer.observe(el));
+    }
+  </script>
+</body>
+</html>
